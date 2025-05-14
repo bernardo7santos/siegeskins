@@ -1,0 +1,1 @@
+// skinController.js (conteúdo simulado)

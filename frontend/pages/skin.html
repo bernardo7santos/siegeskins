@@ -1,0 +1,21 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalhes da Skin</title>
+  <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+  <main>
+    <h1 id="skin-name">Nome da Skin</h1>
+    <img id="skin-image" src="" alt="">
+    <p id="skin-desc">Descrição da skin aqui</p>
+  </main>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const image = params.get("image");
+    document.getElementById("skin-name").textContent = name;
+    document.getElementById("skin-image").src = image;
+  </script>
+</body>
+</html>
